@@ -1,0 +1,11 @@
+<h2>Modifica utilizator</h2>
+
+<form [formGroup]="editGrup" (ngSubmit)="submitForm()">
+  <label for="name" value="[oldUser.nume]">Nume:</label>
+  <input id="name" type="text" formControlName="nume"><br><br>
+  <label for="name">Pass : </label>
+  <input id="password" type="password" formControlName="password"><br><br>
+  <label for="name">Salar: </label>
+  <input id="salar" type="text" formControlName="salar"><br><br>
+  <button (click)="submitForm()">Edit</button>
+</form>

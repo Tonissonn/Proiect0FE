@@ -1,0 +1,9 @@
+<!--<div *ngFor="let user of users">-->
+<!--  <div>{{user.nume}} </div>-->
+<!--</div>-->
+
+<ul>
+  <li *ngFor="let user of users; let i = index" [attr.data-index]="i">
+    Nume: {{user.nume}}<br>Parola: {{user.password}}<br>Salar: {{user.salar}}<br><button  (click)="goToEdit(user.id)">Edit</button><button  (click)="openDialog(user.id)">Delete</button><br><br><br>
+  </li>
+</ul>

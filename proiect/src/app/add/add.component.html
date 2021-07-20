@@ -1,0 +1,17 @@
+<h2>Adauga utilizator nou</h2>
+
+<form [formGroup]="addGrup" (ngSubmit)="submitForm()">
+<!--  <label>Nume</label><br>-->
+<!--  <input type="text" id="nume" name="nume"><br>-->
+<!--  <label>Parola</label><br>-->
+<!--  <input type="password" id="password" name="password"><br>-->
+<!--  <label>Salar</label><br>-->
+<!--  <input type="text" id="salar" name="salar"><br>-->
+  <label for="name">Nume:</label>
+  <input id="name" type="text" formControlName="nume"><br><br>
+  <label for="name">Pass : </label>
+  <input id="password" type="password" formControlName="password"><br><br>
+  <label for="name">Salar: </label>
+  <input id="salar" type="text" formControlName="salar"><br><br>
+  <button (click)="submitForm()">Adauga</button>
+</form>
